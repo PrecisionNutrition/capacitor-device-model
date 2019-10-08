@@ -1,0 +1,49 @@
+{
+  "name": "capacitor-device-model",
+  "version": "0.0.1",
+  "description": "Capture additional information about a native device.",
+  "main": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
+  "scripts": {
+    "build": "npm run clean && tsc",
+    "clean": "rm -rf ./dist",
+    "watch": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "author": "Ben Borowski <ben.borowski@precisionnutrition.com>",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@capacitor/core": "latest"
+  },
+  "devDependencies": {
+    "typescript": "^3.2.4",
+    "@capacitor/ios": "latest",
+    "@capacitor/android": "latest"
+  },
+  "files": [
+    "dist/",
+    "ios/",
+    "android/",
+    "CapacitorDeviceModel.podspec"
+  ],
+  "keywords": [
+    "capacitor",
+    "plugin",
+    "native"
+  ],
+  "capacitor": {
+    "ios": {
+      "src": "ios"
+    },
+    "android": {
+      "src": "android"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:PrecisionNutrition/capacitor-device-model.git"
+  },
+  "bugs": {
+    "url": "git@github.com:PrecisionNutrition/capacitor-device-model.git/issues"
+  }
+}
