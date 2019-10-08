@@ -1,8 +1,5 @@
 import { WebPlugin } from '@capacitor/core';
 import { DeviceModelPlugin, DeviceModelInfo } from './definitions';
-import { Plugins } from '@capacitor/core'
-
-const { Device } = Plugins;
 
 export class DeviceModelWeb extends WebPlugin implements DeviceModelPlugin {
   constructor() {
@@ -13,12 +10,12 @@ export class DeviceModelWeb extends WebPlugin implements DeviceModelPlugin {
   }
 
   async getInfo(): Promise<DeviceModelInfo> {
-    let info = await Device.getInfo();
-    let modelName = info.model;
+    let modelName = window.navigator.userAgent;
 
     return Promise.resolve({
+      hasNotch: false,
       modelName,
-      hasNotch: false
+      platform: 'web'
     });
   }
 }

@@ -6,7 +6,8 @@ declare module "@capacitor/core" {
 
 export interface DeviceModelInfo {
   hasNotch: boolean,
-  modelName: string
+  modelName: string,
+  platform: 'web' | 'ios' | 'android',
 }
 
 export interface DeviceModelPlugin {
