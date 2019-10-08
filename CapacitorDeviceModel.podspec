@@ -1,7 +1,8 @@
 
   Pod::Spec.new do |s|
     s.name = 'CapacitorDeviceModel'
-    s.version = '0.0.1'
+    s.module_name = 'PrecisionNutrition'
+    s.version = '0.4.0'
     s.summary = 'Capture additional information about a native device.'
     s.license = 'UNLICENSED'
     s.homepage = 'git@github.com:PrecisionNutrition/capacitor-device-model.git'

@@ -12,8 +12,9 @@ public class DeviceModel: CAPPlugin {
     let hasNotch: Bool = false
 
     call.resolve([
-      "modelName": modelName,
       "hasNotch": hasNotch,
+      "modelName": modelName,
+      "platform": "ios"
     ])
   }
 }
