@@ -1,5 +1,6 @@
 import Foundation
 import Capacitor
+import DeviceKit
 
 /**
  * Please read the Capacitor iOS Plugin Development Guide
@@ -8,12 +9,12 @@ import Capacitor
 @objc(DeviceModel)
 public class DeviceModel: CAPPlugin {
   @objc func getInfo(_ call: CAPPluginCall) {
-    let modelName: String = UIDevice.current.modelName
-    let hasNotch: Bool = false
+    let device = Device.current
+    let hasNotch = device.isOneOf(Device.allXSeriesDevices + Device.allSimulatorXSeriesDevices)
 
     call.resolve([
       "hasNotch": hasNotch,
-      "modelName": modelName,
+      "modelName": device.description,
       "platform": "ios"
     ])
   }

@@ -10,6 +10,7 @@ export class DeviceModelWeb extends WebPlugin implements DeviceModelPlugin {
   }
 
   async getInfo(): Promise<DeviceModelInfo> {
+    // TODO: get name of browser based on ua
     let modelName = window.navigator.userAgent;
 
     return Promise.resolve({
