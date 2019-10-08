@@ -4,6 +4,11 @@ declare module "@capacitor/core" {
   }
 }
 
+export interface DeviceModelInfo {
+  hasNotch: boolean,
+  modelName: string
+}
+
 export interface DeviceModelPlugin {
-  echo(options: { value: string }): Promise<{value: string}>;
+  getInfo(): Promise<DeviceModelInfo>;
 }

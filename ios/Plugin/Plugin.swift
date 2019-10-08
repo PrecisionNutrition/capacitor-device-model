@@ -7,11 +7,13 @@ import Capacitor
  */
 @objc(DeviceModel)
 public class DeviceModel: CAPPlugin {
-    
-    @objc func echo(_ call: CAPPluginCall) {
-        let value = call.getString("value") ?? ""
-        call.success([
-            "value": value
-        ])
-    }
+  @objc func getInfo(_ call: CAPPluginCall) {
+    let modelName: String = UIDevice.current.modelName
+    let hasNotch: Bool = false
+
+    call.resolve([
+      "modelName": modelName,
+      "hasNotch": hasNotch,
+    ])
+  }
 }
