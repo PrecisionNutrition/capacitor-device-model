@@ -15,6 +15,7 @@ export class DeviceModelWeb extends WebPlugin implements DeviceModelPlugin {
 
     return Promise.resolve({
       hasNotch: false,
+      isSimulator: false,
       modelName,
       platform: 'web'
     });

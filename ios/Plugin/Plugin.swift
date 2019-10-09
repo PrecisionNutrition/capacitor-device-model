@@ -14,6 +14,7 @@ public class DeviceModel: CAPPlugin {
 
     call.resolve([
       "hasNotch": hasNotch,
+      "isSimulator": device.isSimulator,
       "modelName": device.description,
       "platform": "ios"
     ])
