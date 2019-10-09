@@ -11,6 +11,7 @@ See the docs on [Capacitor Plugins](https://capacitor.ionicframework.com/docs/pl
     npm install
 
 ### iOS
+
     cd ios 
     pod install
 
@@ -29,3 +30,25 @@ TODO: the Android version of this plugin is not yet available
 6. `git push --tags`
 
 Pushing a tag will trigger an `npm publish` via Github Actions.
+
+You can also just `npm publish` if Github Actions is not cooporating.
+
+Finally update the Spec in our CocoaPodsSpecs repo as described below.
+
+## CocoaPods Specs
+
+### Setup
+
+See [Private Pods](https://guides.cocoapods.org/making/private-cocoapods.html) for the basics.
+
+    pod repo add PrecisionNutrition-CocoaPodsSpecs https://github.com/PrecisionNutrition/CocoaPodsSpecs
+
+Did it work?
+
+    cd ~/.cocoapods/repos/PrecisionNutrition-CocoaPodsSpecs
+    pod repo lint .
+
+### Updating
+
+pod spec lint CapacitorDeviceModel.podspec --allow-warnings
+pod repo push PrecisionNutrition-CocoaPodsSpecs CapacitorDeviceModel.podspec --allow-warnings
