@@ -10,8 +10,13 @@ See the docs on [Capacitor Plugins](https://capacitor.ionicframework.com/docs/pl
 
     npm install
 
+### iOS
     cd ios 
     pod install
+
+### Android
+
+TODO: the Android version of this plugin is not yet available
 
 ## Release
 
