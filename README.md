@@ -50,5 +50,5 @@ Did it work?
 
 ### Updating
 
-pod spec lint CapacitorDeviceModel.podspec --allow-warnings
-pod repo push PrecisionNutrition-CocoaPodsSpecs CapacitorDeviceModel.podspec --allow-warnings
+    pod spec lint CapacitorDeviceModel.podspec --allow-warnings
+    pod repo push PrecisionNutrition-CocoaPodsSpecs CapacitorDeviceModel.podspec --allow-warnings
