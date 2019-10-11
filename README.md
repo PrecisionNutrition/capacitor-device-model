@@ -50,6 +50,8 @@ Did it work?
 
 ### Updating
 
+The podspec is linted and push to our [CocoaPodsSpecs repo](https://github.com/PrecisionNutrition/CocoaPodsSpecs) so it can be installed via pods without a full path.
+
 Use the scripts:
 
     yarn spec:lint
