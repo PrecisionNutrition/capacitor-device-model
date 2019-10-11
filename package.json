@@ -9,7 +9,8 @@
     "clean": "rm -rf ./dist",
     "watch": "tsc --watch",
     "prepublishOnly": "npm run build",
-    "spec": "pod repo push PrecisionNutrition-CocoaPodsSpecs CapacitorDeviceModel.podspec --allow-warnings"
+    "spec:lint": "pod spec lint CapacitorDeviceModel.podspec --allow-warnings",
+    "spec:push": "pod repo push PrecisionNutrition-CocoaPodsSpecs CapacitorDeviceModel.podspec --allow-warnings"
   },
   "author": "Ben Borowski <ben.borowski@precisionnutrition.com>",
   "license": "UNLICENSED",

@@ -50,5 +50,14 @@ Did it work?
 
 ### Updating
 
+Use the scripts:
+
+    yarn spec:lint
+    yarn spec:push
+
+or, more directly:
+
     pod spec lint CapacitorDeviceModel.podspec --allow-warnings
     pod repo push PrecisionNutrition-CocoaPodsSpecs CapacitorDeviceModel.podspec --allow-warnings
+
+Warnings will prevent a push and there are some warnings that currently are unable to resolve. Feel free to fix!
