@@ -23,7 +23,7 @@ TODO: the Android version of this plugin is not yet available
 
 1. Do work
 2. Commit work and push
-3. Update versions in CapacitorDeviceModel.podspec and package.json to the same version
+3. Update versions in PrecisionNutritionCapacitorDeviceModel.podspec and package.json to the same version
 3. `npm install` to bump package-lock.json
 4. `git commit -am "<VERSION_NUMBER>"`
 5. `git tag v<VERSION_NUMBER>`
@@ -59,7 +59,7 @@ Use the scripts:
 
 or, more directly:
 
-    pod spec lint CapacitorDeviceModel.podspec --allow-warnings
-    pod repo push PrecisionNutrition-CocoaPodsSpecs CapacitorDeviceModel.podspec --allow-warnings
+    pod spec lint PrecisionNutritionCapacitorDeviceModel.podspec --allow-warnings
+    pod repo push PrecisionNutrition-CocoaPodsSpecs PrecisionNutritionCapacitorDeviceModel.podspec --allow-warnings
 
 Warnings will prevent a push and there are some warnings that currently are unable to resolve. Feel free to fix!
