@@ -2,7 +2,7 @@
     s.name = 'PrecisionNutritionCapacitorDeviceModel'
     s.version = '0.14.0'
     s.summary = 'Capture additional information about a native device.'
-    s.license = 'UNLICENSED'
+    s.license = 'MIT'
     s.homepage = 'https://precisionnutrition.com'
     s.author = 'Ben Borowski <ben.borowski@precisionnutrition.com>'
     s.source = { :git => 'https://github.com/PrecisionNutrition/capacitor-device-model.git', :tag => "v#{s.version}" }

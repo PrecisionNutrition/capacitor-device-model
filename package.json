@@ -13,7 +13,7 @@
     "spec:push": "pod repo push PrecisionNutrition-CocoaPodsSpecs PrecisionNutritionCapacitorDeviceModel.podspec --allow-warnings"
   },
   "author": "Ben Borowski <ben.borowski@precisionnutrition.com>",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "dependencies": {
     "@capacitor/core": "latest"
   },

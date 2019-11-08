@@ -37,9 +37,12 @@ Finally update the Spec in our CocoaPodsSpecs repo as described below.
 
 ## CocoaPods Specs
 
-### Setup
+You'll need to create your first tag to start because of [this issue](https://stackoverflow.com/questions/37038659/issue-when-creating-my-first-cocoapod)
 
-See [Private Pods](https://guides.cocoapods.org/making/private-cocoapods.html) for the basics.
+    git tag v0.0.1
+    git push --tags
+
+### Setup
 
     pod repo add PrecisionNutrition-CocoaPodsSpecs https://github.com/PrecisionNutrition/CocoaPodsSpecs
 
@@ -56,10 +59,5 @@ Use the scripts:
 
     yarn spec:lint
     yarn spec:push
-
-or, more directly:
-
-    pod spec lint PrecisionNutritionCapacitorDeviceModel.podspec --allow-warnings
-    pod repo push PrecisionNutrition-CocoaPodsSpecs PrecisionNutritionCapacitorDeviceModel.podspec --allow-warnings
 
 Warnings will prevent a push and there are some warnings that currently are unable to resolve. Feel free to fix!
