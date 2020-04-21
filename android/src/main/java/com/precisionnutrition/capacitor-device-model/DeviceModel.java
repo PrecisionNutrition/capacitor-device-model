@@ -1,4 +1,4 @@
-package com.precisionnutrition.capacitor-device-model;
+package com.precisionnutrition.capacitordevicemodel;
 
 import com.getcapacitor.JSObject;
 import com.getcapacitor.NativePlugin;
