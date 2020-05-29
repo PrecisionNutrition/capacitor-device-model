@@ -5,7 +5,9 @@ import com.getcapacitor.NativePlugin;
 import com.getcapacitor.Plugin;
 import com.getcapacitor.PluginCall;
 import com.getcapacitor.PluginMethod;
+
 import android.os.Build;
+
 @NativePlugin()
 public class DeviceModel extends Plugin {
 
