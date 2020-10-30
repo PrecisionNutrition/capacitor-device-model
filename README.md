@@ -17,7 +17,7 @@ See the docs on [Capacitor Plugins](https://capacitor.ionicframework.com/docs/pl
 
 ### Android
 
-TODO: the Android version of this plugin is not yet available
+Open ./android in Android Studio or `./android/gradlew`.
 
 ## Release
 
