@@ -4,7 +4,7 @@ import DeviceKit
 
 /**
  * Please read the Capacitor iOS Plugin Development Guide
- * here: https://capacitor.ionicframework.com/docs/plugins/ios
+ * here: https://capacitorjs.com/docs/plugins/ios
  */
 @objc(DeviceModel)
 public class DeviceModel: CAPPlugin {
