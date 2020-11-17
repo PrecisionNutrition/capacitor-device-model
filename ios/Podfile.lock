@@ -2,12 +2,12 @@ PODS:
   - Capacitor (2.4.2):
     - CapacitorCordova
   - CapacitorCordova (2.4.2)
-  - DeviceKit (2.3.0)
+  - DeviceKit (4.2.1)
 
 DEPENDENCIES:
   - "Capacitor (from `../node_modules/@capacitor/ios`)"
   - "CapacitorCordova (from `../node_modules/@capacitor/ios`)"
-  - DeviceKit (~> 2.3)
+  - DeviceKit (~> 4.2)
 
 SPEC REPOS:
   trunk:
@@ -22,8 +22,8 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Capacitor: 99a3d85b31f782d6b58bd9e3f2de4ed719c94d51
   CapacitorCordova: 64114f68ed75e409d37a8e1129c0038b3a0cec0d
-  DeviceKit: da103891aa928d89f64ea8dd8aca738c5f3d8ac0
+  DeviceKit: cadb5ff25d45fe186778bf2d0fd2ea4750542189
 
-PODFILE CHECKSUM: c95402e727b1e8050fe379d60e8352a81cafe429
+PODFILE CHECKSUM: 2a436618ef742295a20c901d3d4275599d6b62a5
 
 COCOAPODS: 1.10.0
