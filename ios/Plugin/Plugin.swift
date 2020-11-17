@@ -10,7 +10,7 @@ import DeviceKit
 public class DeviceModel: CAPPlugin {
   @objc func getInfo(_ call: CAPPluginCall) {
     let device = Device.current
-    let hasNotch = device.isOneOf(Device.allXSeriesDevices + Device.allSimulatorXSeriesDevices)
+    let hasNotch = device.isOneOf(Device.allDevicesWithSensorHousing + Device.allSimulatorDevicesWithSensorHousing)
 
     call.resolve([
       "hasNotch": hasNotch,
