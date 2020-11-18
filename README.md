@@ -23,7 +23,7 @@ Open ./android in Android Studio or `./android/gradlew`.
 
 1. Do work
 2. Commit work and push
-3. Update versions in PrecisionNutritionCapacitorDeviceModel.podspec and package.json to the same version
+3. Update version number in package.json
 3. `npm install` to bump package-lock.json
 4. `git commit -am "<VERSION_NUMBER>"`
 5. `git tag <VERSION_NUMBER>`
