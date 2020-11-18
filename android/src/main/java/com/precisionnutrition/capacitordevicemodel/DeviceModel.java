@@ -28,7 +28,7 @@ public class DeviceModel extends Plugin {
     // Android does not have an API for detecting simulators, so we look to
     // Google for advice on that one.
     //
-    // Source: https://github.com/flutter/plugins/blob/master/packages/device_info/android/src/main/java/io/flutter/plugins/deviceinfo/MethodCallHandlerImpl.java
+    // Source: https://github.com/flutter/plugins/blob/master/packages/device_info/device_info/android/src/main/java/io/flutter/plugins/deviceinfo/MethodCallHandlerImpl.java#L116
     private boolean isSimulator() {
         return (Build.BRAND.startsWith("generic") && Build.DEVICE.startsWith("generic"))
             || Build.FINGERPRINT.startsWith("generic")
