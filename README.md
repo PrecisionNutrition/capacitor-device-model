@@ -31,6 +31,8 @@ Open ./android in Android Studio or `./android/gradlew`.
 
 Pushing a tag will trigger an `npm publish` via Github Actions.
 
+Note that you can also create a Release on Github to do tagging. This is handy when tagging release candidates because you can mark the release as "Pre-release Software".
+
 You can also just `npm publish` if Github Actions is not cooporating.
 
 Finally update the Spec in our CocoaPodsSpecs repo as described below.
@@ -57,7 +59,7 @@ The podspec is linted and push to our [CocoaPodsSpecs repo](https://github.com/P
 
 Use the scripts:
 
-    yarn spec:lint
-    yarn spec:push
+    npm run spec:lint
+    npm run spec:push
 
 Warnings will prevent a push and there are some warnings that currently are unable to resolve. Feel free to fix!
