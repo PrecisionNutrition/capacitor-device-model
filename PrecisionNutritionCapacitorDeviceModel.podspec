@@ -1,6 +1,6 @@
   Pod::Spec.new do |s|
     s.name = 'PrecisionNutritionCapacitorDeviceModel'
-    s.version = '0.16.0'
+    s.version = '0.17.0-rc.0'
     s.summary = 'Capture additional information about a native device.'
     s.license = 'MIT'
     s.homepage = 'https://precisionnutrition.com'
