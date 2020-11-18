@@ -26,7 +26,7 @@ Open ./android in Android Studio or `./android/gradlew`.
 3. Update versions in PrecisionNutritionCapacitorDeviceModel.podspec and package.json to the same version
 3. `npm install` to bump package-lock.json
 4. `git commit -am "<VERSION_NUMBER>"`
-5. `git tag v<VERSION_NUMBER>`
+5. `git tag <VERSION_NUMBER>`
 6. `git push --tags`
 
 Pushing a tag will trigger an `npm publish` via Github Actions.
