@@ -1,6 +1,6 @@
 {
   "name": "@precision-nutrition/capacitor-device-model",
-  "version": "0.16.0",
+  "version": "0.17.0-rc.2",
   "description": "Capture additional information about a native device.",
   "main": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
@@ -14,13 +14,14 @@
   },
   "author": "Ben Borowski <ben.borowski@precisionnutrition.com>",
   "license": "MIT",
-  "dependencies": {
-    "@capacitor/core": "latest"
-  },
   "devDependencies": {
-    "@capacitor/android": "latest",
-    "@capacitor/ios": "latest",
+    "@capacitor/android": "^2.4.2",
+    "@capacitor/core": "^2.4.2",
+    "@capacitor/ios": "^2.4.2",
     "typescript": "^3.2.4"
+  },
+  "peerDependencies": {
+    "@capacitor/core": "^2.4.2"
   },
   "files": [
     "dist/",

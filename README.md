@@ -17,19 +17,21 @@ See the docs on [Capacitor Plugins](https://capacitor.ionicframework.com/docs/pl
 
 ### Android
 
-TODO: the Android version of this plugin is not yet available
+Open ./android in Android Studio or `./android/gradlew`.
 
 ## Release
 
 1. Do work
 2. Commit work and push
-3. Update versions in PrecisionNutritionCapacitorDeviceModel.podspec and package.json to the same version
+3. Update version number in package.json
 3. `npm install` to bump package-lock.json
 4. `git commit -am "<VERSION_NUMBER>"`
-5. `git tag v<VERSION_NUMBER>`
+5. `git tag <VERSION_NUMBER>`
 6. `git push --tags`
 
 Pushing a tag will trigger an `npm publish` via Github Actions.
+
+Note that you can also create a Release on Github to do tagging. This is handy when tagging release candidates because you can mark the release as "Pre-release Software".
 
 You can also just `npm publish` if Github Actions is not cooporating.
 
@@ -57,7 +59,7 @@ The podspec is linted and push to our [CocoaPodsSpecs repo](https://github.com/P
 
 Use the scripts:
 
-    yarn spec:lint
-    yarn spec:push
+    npm run spec:lint
+    npm run spec:push
 
 Warnings will prevent a push and there are some warnings that currently are unable to resolve. Feel free to fix!

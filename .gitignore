@@ -1,3 +1,7 @@
+# NPM renames .gitignore to .npmignore
+# In order to prevent that, we remove the initial "."
+# And the CLI then renames it
+
 # node files
 dist/
 node_modules/
@@ -9,6 +13,8 @@ xcuserdata
 
 # macOS files
 .DS_Store
+
+
 
 # Based on Android gitignore template: https://github.com/github/gitignore/blob/master/Android.gitignore
 
